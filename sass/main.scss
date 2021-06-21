@@ -1,0 +1,27 @@
+//BASE
+@import "./base/reset";
+@import "./base/container";
+@import "./base/section";
+
+//UTILS
+@import "./utils/variables";
+@import "./utils/visually-hidden";
+
+//LAYOUTS
+@import "./layouts/header";
+@import "./layouts/hero";
+@import "./layouts/features";
+@import "./layouts/tasks";
+@import "./layouts/staff";
+@import "./layouts/clients";
+@import "./layouts/footer";
+@import "./layouts/portfolio-btns";
+@import "./layouts/card-set";
+
+//COMPONENTS
+@import "./components/backdrop";
+@import "./components/modal-window";
+@import "./components/social-network-links";
+@import "./components/form-footer";
+@import "./components/form-hero";
+@import "./components/logo";

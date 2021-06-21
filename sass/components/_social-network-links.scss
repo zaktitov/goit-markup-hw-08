@@ -1,0 +1,38 @@
+.social-network {
+  width: 206px;
+  margin-top: 16px;
+
+  &__list {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__link {
+    background-color: var(--icons-bg);
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: var(--icon-color);
+    cursor: pointer;
+
+    transition: background-color var(--transition-duration)
+      var(--transition-timing-function);
+  }
+
+  &__link:hover,
+  &__link:focus {
+    background-color: var(--text-hover);
+    color: #ffffff;
+  }
+
+  &__icon {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+    transition: fill 255ms var(--transition-timing-function);
+  }
+}

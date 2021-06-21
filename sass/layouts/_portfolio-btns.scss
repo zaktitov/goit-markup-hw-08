@@ -1,0 +1,61 @@
+.portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  background-color: #ffffff;
+
+  &-container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-color: var(--bg-color);
+  }
+
+  &-buttons__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 34px;
+  }
+
+  &-buttons__item {
+    margin-right: 8px;
+  }
+  &-buttons__item:last-child {
+    margin-right: 0px;
+  }
+}
+
+.buttons {
+  padding: 6px 22px;
+
+  color: var(--buttons-text);
+  background: var(--buttons-main-bcg);
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  border-radius: 4px;
+  border-style: none;
+
+  transition: background-color var(--transition-duration)
+      var(--transition-timing-function),
+    color var(--transition-duration) var(--transition-timing-function);
+
+  &.active:hover,
+  &.active:focus {
+    color: var(--buttons-text-active);
+    background: var(--buttons-active-bcg);
+    cursor: pointer;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+    transition: box-shadow var(--transition-duration)
+      var(--transition-timing-function);
+  }
+}

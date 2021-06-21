@@ -1,0 +1,32 @@
+.logo {
+  margin-right: 90px;
+
+  color: var(--color-logos);
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+  animation-duration: 1500ms;
+
+  &--accent {
+    color: #212121;
+  }
+}
+
+.logo__bottom {
+  margin-right: 0px;
+
+  color: var(--color-logos);
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+  animation-duration: 1500ms;
+
+  &--accent {
+    color: #ffffff;
+  }
+}

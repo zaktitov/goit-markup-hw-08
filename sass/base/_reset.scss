@@ -1,0 +1,30 @@
+body {
+  background-color: var(--bg-color);
+  color: var(--main-text);
+  font-family: Roboto, sans-serif;
+  padding-top: 80px;
+}
+
+ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0px;
+  padding: 0px;
+}
+
+.link {
+  text-decoration: none;
+}
