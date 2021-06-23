@@ -1,0 +1,144 @@
+@media screen and (max-width: 767px) {
+  .mobile-menu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vw;
+    overflow: auto;
+    background: #ffffff;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    &__container {
+      position: relative;
+      padding-top: 48px;
+      padding-bottom: 48px;
+
+      @media screen and (min-width: 480px) {
+        width: 480px;
+        margin: 0 auto;
+      }
+
+      @media screen and (min-width: 768px) {
+        width: 768px;
+        margin: 0 auto;
+      }
+      @media screen and (min-width: 1200px) {
+        width: 1200px;
+      }
+    }
+
+    &__close-btn {
+      position: absolute;
+      right: 30px;
+      top: 10px;
+      background: transparent;
+      padding: 0;
+      border: none;
+      color: black;
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__close-btn:focus {
+      color: #2196f3;
+    }
+
+    &__close-btn__icon {
+      fill: currentColor;
+    }
+
+    &__link {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 40px;
+      line-height: 47px;
+      letter-spacing: 0.02em;
+      color: #212121;
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__link:hover,
+    &__link:focus {
+      color: #2196f3;
+    }
+
+    &__item {
+      margin-bottom: 32px;
+    }
+
+    &__item:last-child {
+      margin-bottom: 0px;
+    }
+
+    &__contacts {
+      margin-top: 302px;
+    }
+
+    &__contacts-item:nth-child(2) {
+      margin-top: 32px;
+    }
+
+    &__contacts-link-tel {
+      font-family: Roboto;
+      font-weight: 500;
+      font-size: 34px;
+      line-height: 1.17;
+
+      letter-spacing: 0.02em;
+
+      color: #2196f3;
+    }
+    &__contacts-link-mail {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 28px;
+      letter-spacing: 0.02em;
+
+      color: #757575;
+    }
+
+    &__social-links-list {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 64px;
+    }
+
+    &__social-links-item:not(:last-child) {
+      margin-right: 20px;
+      border-right: 1px solid rgba(33, 33, 33, 0.2);
+      padding-right: 20px;
+    }
+
+    &__social-links {
+      font-family: Roboto;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 1.22px;
+
+      letter-spacing: 0.02em;
+
+      color: #2196f3;
+    }
+  }
+  .mobile-menu.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+}
+.accent {
+  color: #2196f3;
+}
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
+}
