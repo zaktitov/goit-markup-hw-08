@@ -2,10 +2,7 @@ body {
   background-color: var(--bg-color);
   color: var(--main-text);
   font-family: Roboto, sans-serif;
-
-  @media screen and (min-width: 1200px) {
-    padding-top: 80px;
-  }
+  padding-top: 80px;
 }
 
 ul {
