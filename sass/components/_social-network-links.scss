@@ -1,10 +1,17 @@
 .social-network {
-  width: 206px;
   margin-top: 16px;
+
+  @media screen and (min-width: 1200px) {
+    width: 206px;
+  }
 
   &__list {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+
+    @media screen and (min-width: 1200px) {
+      justify-content: space-around;
+    }
   }
 
   &__link {

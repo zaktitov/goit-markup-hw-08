@@ -4,25 +4,58 @@
 
   background-color: #ffffff;
 
+  @media screen and (max-width: 767px) {
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+
   &-container {
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
+    max-width: 480px;
+    background-color: var(--bg-color);
     margin-left: auto;
     margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
 
-    background-color: var(--bg-color);
+    @media screen and (min-width: 768px) {
+      max-width: 1199px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 1200px;
+    }
   }
 
   &-buttons__list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: right;
     margin-bottom: 34px;
+
+    @media screen and (min-width: 768px) {
+      justify-content: center;
+      flex-wrap: nowrap;
+    }
+
+    @media screen and (min-width: 1200px) {
+      justify-content: center;
+    }
   }
 
   &-buttons__item {
     margin-right: 8px;
+
+    @media screen and (max-width: 767px) {
+      &:nth-child(1) {
+        margin-bottom: 15px;
+      }
+
+      &:nth-child(2) {
+        margin-bottom: 15px;
+      }
+      &:nth-child(3) {
+        margin-bottom: 15px;
+      }
+    }
   }
   &-buttons__item:last-child {
     margin-right: 0px;

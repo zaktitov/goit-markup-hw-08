@@ -22,11 +22,16 @@
       <nav class="nav">
         <a class="logo animate__flipInX" href="./index.html">Web<span class="logo--accent">Studio</span></a>
         <ul class="nav__list">
-          <li class="nav__item"><a href="./index.html" class="nav__link">Студия</a></li>
+          <li class="nav__item"><a href="./index.html" class="nav__link ">Студия</a></li>
           <li class="nav__item"><a href="./portfolio.html" class="nav__link current-port">Портфолио</a></li>
           <li class="nav__item"><a href="" class="nav__link">Контакты</a></li>
         </ul>
       </nav>
+      <button type="button" class="header-menu__btn" data-menu-button>
+        <svg class="header-menu__btn-icon" width="40" height="40">
+          <use href="./image/symbol-omg3.svg#burger"></use>
+        </svg>
+      </button>
 
 
       <ul class="contacts">
@@ -43,6 +48,41 @@
             </svg>+38 096 1111111</a>
         </li>
       </ul>
+    </div>
+
+    <!-- mobile menu -->
+
+    <div class="mobile-menu" data-menu>
+      <div class="mobile-menu__container">
+        <button type="button" class="mobile-menu__close-btn" data-menu-close>
+          <svg class="mobile-menu__close-btn__icon" width="40" height="40">
+            <use href="./image/symbol-omg3.svg#close-black"></use>
+          </svg></button>
+
+        <ul class="mobile-menu__nav">
+          <li class="mobile-menu__item"><a href="./index.html" class="mobile-menu__link link accent">Студия</a></li>
+          <li class="mobile-menu__item"><a href="./portfolio.html" class="mobile-menu__link link">Портфолио</a></li>
+          <li class="mobile-menu__item"><a href="#" class="mobile-menu__link link">Контакты</a></li>
+        </ul>
+
+        <ul class="mobile-menu__contacts">
+          <li class="mobile-menu__contacts-item"><a href="tel:+380961111111"
+              class="mobile-menu__contacts-link-tel link">+38
+              096 111 11 11</a>
+          </li>
+          <li class="mobile-menu__contacts-item"><a href="mailto:info@devstudio.com"
+              class="mobile-menu__contacts-link-mail link">info@devstudio.com</a>
+          </li>
+        </ul>
+
+        <ul class="mobile-menu__social-links-list">
+          <li class="mobile-menu__social-links-item"><a href="" class="mobile-menu__social-links link">Instagram</a>
+          </li>
+          <li class="mobile-menu__social-links-item"><a href="" class="mobile-menu__social-links link">Twitter</a></li>
+          <li class="mobile-menu__social-links-item"><a href="" class="mobile-menu__social-links link">Facebook</a></li>
+          <li class="mobile-menu__social-links-item"><a href="" class="mobile-menu__social-links link">LinkedIn</a></li>
+        </ul>
+      </div>
     </div>
   </header>
 
@@ -64,7 +104,7 @@
           <li class="product">
             <a class="product__link" href="">
               <div class="product__thumb">
-                <img src="./image/portfolio/imgkryz.jpg" alt="вебсайт" width="370">
+                <img src="./image/portfolio/imgkryz.jpg" alt="вебсайт">
                 <div class="product__container">
                   <p>Технокряк это современная площадка распространения коронавируса.
                     Компании используют эту платформу
@@ -82,7 +122,7 @@
           <li class="product">
             <a class="product__link" href="">
               <div class="product__thumb">
-                <img src="./image/portfolio/ball.jpg" alt="баскетболисты" width="370">
+                <img src="./image/portfolio/ball.jpg" alt="баскетболисты">
                 <div class="product__container">
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi,
                     perspiciatis ullam? Alias, inventore. Rem quasi quaerat et eius expedita officiis.
@@ -99,7 +139,7 @@
           <li class="product">
             <a class="product__link" href="">
               <div class="product__thumb">
-                <img src="./image/portfolio/fish.jpg" alt="логотип-рыба" width="370">
+                <img src="./image/portfolio/fish.jpg" alt="логотип-рыба">
                 <div class="product__container">
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi,
                     perspiciatis ullam? Alias, inventore. Rem quasi quaerat et eius expedita officiis.
@@ -116,7 +156,7 @@
           <li class="product">
             <a class="product__link" href="">
               <div class="product__thumb">
-                <img src="./image/portfolio/imgears.jpg" alt="наушники" width="370">
+                <img src="./image/portfolio/imgears.jpg" alt="наушники">
                 <div class="product__container">
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi,
                     perspiciatis ullam? Alias, inventore. Rem quasi quaerat et eius expedita officiis.
@@ -132,7 +172,7 @@
 
           <li class="product">
             <a class="product__link">
-              <div class="product__thumb"><img src="./image/portfolio/imgbox1.jpg" alt="коробки" width="370">
+              <div class="product__thumb"><img src="./image/portfolio/imgbox1.jpg" alt="коробки">
                 <div class="product__container">
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi,
                     perspiciatis ullam? Alias, inventore. Rem quasi quaerat et eius expedita officiis.
@@ -149,7 +189,7 @@
           <li class="product">
             <a class="product__link" href="">
               <div class="product__thumb">
-                <img src="./image/portfolio/imgscreen.jpg" alt="монитор" width="370">
+                <img src="./image/portfolio/imgscreen.jpg" alt="монитор">
                 <div class="product__container">
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi,
                     perspiciatis ullam? Alias, inventore. Rem quasi quaerat et eius expedita officiis.
@@ -166,7 +206,7 @@
           <li class="product">
             <a class="product__link" href="">
               <div class="product__thumb">
-                <img src="./image/portfolio/imgbook.jpg" alt="книжки" width="370">
+                <img src="./image/portfolio/imgbook.jpg" alt="книжки">
                 <div class="product__container">
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi,
                     perspiciatis ullam? Alias, inventore. Rem quasi quaerat et eius expedita officiis.
@@ -183,7 +223,7 @@
           <li class="product">
             <a class="product__link" href="">
               <div class="product__thumb">
-                <img src="./image/portfolio/imgtag.jpg" alt="ярлык" width="370">
+                <img src="./image/portfolio/imgtag.jpg" alt="ярлык">
                 <div class="product__container">
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi,
                     perspiciatis ullam? Alias, inventore. Rem quasi quaerat et eius expedita officiis.
@@ -200,7 +240,7 @@
           <li class="product">
             <a class="product__link" href="">
               <div class="product__thumb">
-                <img src="./image/portfolio/imghands.jpg" alt="клавитура" width="370">
+                <img src="./image/portfolio/imghands.jpg" alt="клавитура">
                 <div class="product__container">
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi,
                     perspiciatis ullam? Alias, inventore. Rem quasi quaerat et eius expedita officiis.
@@ -231,7 +271,7 @@
               пр-т
               Леси Украинки, 26</a></p>
 
-          <ul class="footer-contacts__list">
+          <ul class="footer-contacts">
             <li class="footer-contacts__item">
               <a class="footer-contacts__link" href="mailto:infoexample.com">info@example.com
               </a>
@@ -284,7 +324,6 @@
         </button>
       </form>
     </div>
-
   </footer>
 
 </body>
