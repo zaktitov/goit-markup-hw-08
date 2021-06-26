@@ -1103,6 +1103,12 @@ p {
   border-left: 1px solid #eeeeee;
 }
 
+@media screen and (min-width: 768px) {
+  .subtitle__container {
+    flex-grow: 1;
+  }
+}
+
 .subtitle__discription {
   margin-top: 4px;
   color: var(--secondary-text);
