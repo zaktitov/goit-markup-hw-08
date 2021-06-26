@@ -622,6 +622,7 @@ p {
 
 @media screen and (min-width: 1200px) {
   .staff__list {
+    padding: inherit;
     flex-wrap: nowrap;
     justify-content: center;
     margin-bottom: 0px;

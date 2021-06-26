@@ -47,6 +47,7 @@
     }
 
     @media screen and (min-width: 1200px) {
+      padding: inherit;
       flex-wrap: nowrap;
       justify-content: center;
       margin-bottom: 0px;
