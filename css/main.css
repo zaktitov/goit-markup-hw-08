@@ -1009,6 +1009,12 @@ p {
   padding: 0 15px;
 }
 
+@media screen and (max-width: 767px) {
+  .grid :not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
 @media screen and (min-width: 767px) {
   .grid {
     display: flex;
@@ -1291,7 +1297,6 @@ p {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 450px;
-  overflow-y: scroll;
   overflow-x: visible;
   max-width: 100%;
   max-height: 100%;
