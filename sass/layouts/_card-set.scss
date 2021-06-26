@@ -15,7 +15,6 @@
 }
 
 .product {
-  text-align: center;
   @media screen and (min-width: 767px) {
     margin-left: 30px;
     margin-top: 30px;
@@ -42,10 +41,6 @@
 
     transition: box-shadow var(--transition-duration)
       var(--transition-timing-function);
-
-    @media screen and (max-width: 767px) {
-      width: 370px;
-    }
   }
 
   &__link:hover,

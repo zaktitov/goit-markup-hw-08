@@ -1023,10 +1023,6 @@ p {
   }
 }
 
-.product {
-  text-align: center;
-}
-
 @media screen and (min-width: 767px) {
   .product {
     margin-left: 30px;
@@ -1054,12 +1050,6 @@ p {
   background: #ffffff;
   box-sizing: border-box;
   transition: box-shadow var(--transition-duration) var(--transition-timing-function);
-}
-
-@media screen and (max-width: 767px) {
-  .product__link {
-    width: 370px;
-  }
 }
 
 .product__link:hover, .product__link:focus {
