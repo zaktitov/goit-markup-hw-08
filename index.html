@@ -153,7 +153,13 @@
         <ul class="tasks__list">
           <li class="tasks__item">
             <div class="tasks__thumb">
-              <img src="./image/img-1.jpg" alt="разработка" width="370">
+              <picture>
+                <source srcset="./image/about/appdesk.webp 1x, ./image/about/appdesk@2x.webp 2x"
+                  media="(min-width:1200px)" type="image/webp">
+                <source srcset="./image/about/appdesk.jpg 1x, ./image/about/appdesk@2x.jpg 2x"
+                  media="(min-wdith:1200px)">
+                <img src=" #" alt="разработка">
+              </picture>
               <div class="tasks__text">
                 Десктопные приложения
               </div>
@@ -161,7 +167,12 @@
           </li>
           <li class="tasks__item">
             <div class="tasks__thumb">
-              <img src="./image/img-2.jpg" alt="оптимизация" width="370">
+              <picture>
+                <source srcset="./image/about/appmob.webp 1x, ./image/about/appmob@2x.webp 2x"
+                  media="(min-width:1200px)" type="image/webp">
+                <source srcset="./image/about/appmob.jpg 1x, ./image/about/appmob@2x.jpg 2x" media="(min-width:1200px)">
+                <img src="#" alt="оптимизация">
+              </picture>
               <div class="tasks__text">
                 Мобильные приложения
               </div>
@@ -169,7 +180,12 @@
           </li>
           <li class="tasks__item">
             <div class="tasks__thumb">
-              <img src="./image/img-3.jpg" alt="реализация" width="370">
+              <picture>
+                <source srcset="./image/about/des.webp 1x, ./image/about/des@2x.webp 2x" media="(min-width:1200px)"
+                  type="image/webp">
+                <source srcset="./image/about/des.jpg 1x, ./image/about/des@2x.jpg 2x" media="(min-width:1200px)">
+                <img src="#" alt="реализация">
+              </picture>
               <div class="tasks__text">
                 Дизайнерские решения
               </div>
@@ -185,7 +201,15 @@
         <h2 class="staff__heading">Наша команда</h2>
         <ul class="staff__list">
           <li class="staff__item">
-            <img class="staff__image" src="./image/igor.jpg" alt="игорь">
+            <picture>
+              <source srcset="./image/staff/igor/igor-pc.jpg 1x, ./image/staff/igor/igor-pc@2x.jpg 2x"
+                media="(min-width:1200px)">
+              <source srcset="./image/staff/igor/igor-tab.jpg 1x, ./image/staff/igor/igor-tab@2x.jpg 2x"
+                media="(min-width:768px)">
+              <source srcset="./image/staff/igor/igor-mob.jpg 1x, ./image/staff/igor/igor-mob@2x.jpg 2x"
+                media="(max-width: 767px)">
+              <img class="staff__image" src="./image/igor.jpg" alt="игорь">
+            </picture>
             <div class="staff__card">
               <h3 class="staff__names">Игорь Демьяненко </h3>
               <p class="staff__positions">Designer </p>

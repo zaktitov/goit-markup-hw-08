@@ -367,25 +367,31 @@ p {
 
 @media (min-device-pixel-ratio: 1), (min-resolution: 96dpi) and (max-width: 1199px), (min-resolution: 1dppx) and (max-width: 1199px) {
   .hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../image/hero-tablet.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../image/tablet/hero-tablet.jpg");
+  }
+}
+
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) and (min-width: 1200px), (min-resolution: 2dppx) and (min-width: 1200px) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../image/pc/hero-comp@2x.jpg");
   }
 }
 
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) and (max-width: 1199px), (min-resolution: 2dppx) and (max-width: 1199px) {
   .hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../image/hero-tablet@2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../image/tablet/hero-tablet@2x.jpg");
   }
 }
 
 @media (min-device-pixel-ratio: 1), (min-resolution: 96dpi) and (max-width: 767px), (min-resolution: 1dppx) and (max-width: 767px) {
   .hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../image/Hero.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../image/mobile/Hero.jpg");
   }
 }
 
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) and (max-width: 767px), (min-resolution: 2dppx) and (max-width: 767px) {
   .hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../image/Hero2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../image/mobile/Hero2x.jpg");
   }
 }
 
@@ -788,7 +794,7 @@ p {
     margin: 0 auto;
     width: 768px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
   }
 }
