@@ -908,15 +908,15 @@ p {
 }
 
 .portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: #ffffff;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 1200px) {
   .portfolio {
-    padding-top: 60px;
-    padding-bottom: 40px;
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 
@@ -1044,12 +1044,8 @@ p {
 }
 
 .product__link {
-  display: block;
   text-decoration: none;
-  width: 100%;
   height: 404px;
-  left: 215px;
-  top: 262px;
   background: #ffffff;
   box-sizing: border-box;
   transition: box-shadow var(--transition-duration) var(--transition-timing-function);
@@ -1270,6 +1266,19 @@ p {
   transition: opacity var(--transition-duration) var(--transition-timing-function), visibility var(--transition-duration) var(--transition-timing-function);
 }
 
+@media screen and (max-width: 767px) {
+  .backdrop {
+    padding: 93px 15px;
+    overflow-y: scroll;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .backdrop {
+    padding: 208px 159px;
+  }
+}
+
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
@@ -1281,12 +1290,22 @@ p {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  min-width: 528px;
-  min-height: 581px;
+  width: 450px;
+  overflow-y: scroll;
+  overflow-x: visible;
+  max-width: 100%;
+  max-height: 100%;
   padding: 40px 40px;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal__window {
+    min-width: 528px;
+    min-height: 581px;
+  }
 }
 
 .modal__btn {
@@ -1461,12 +1480,17 @@ p {
 
 .form-hero {
   width: 100%;
-  height: 501px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+}
+
+@media screen and (max-width: 1199px) {
+  .form-hero {
+    height: 100%;
+  }
 }
 
 .form-hero:focus-within {
@@ -1476,15 +1500,21 @@ p {
 .form-hero__slogan {
   font-family: Roboto;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 15px;
   line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
 }
 
+@media screen and (max-width: 1199px) {
+  .form-hero__slogan {
+    margin-bottom: 20px;
+  }
+}
+
 .form-hero__label {
-  width: 448px;
+  width: 100%;
   margin-top: 10px;
   font-family: Roboto;
   font-weight: 400;
@@ -1494,7 +1524,14 @@ p {
   color: var(--secondary-text);
 }
 
+@media screen and (min-width: 1200px) {
+  .form-hero__label {
+    width: 448px;
+  }
+}
+
 .form-hero__container {
+  width: 100%;
   position: relative;
   margin-top: 4px;
 }
@@ -1508,7 +1545,8 @@ p {
 }
 
 .form-hero__input {
-  width: 448px;
+  margin-top: 4px;
+  width: 100%;
   height: 40px;
   padding: 11px 42px;
   outline: none;
@@ -1517,13 +1555,19 @@ p {
   transition: border-color var(--transition-duration) var(--transition-timing-function);
 }
 
+@media screen and (min-width: 1200px) {
+  .form-hero__input {
+    width: 448px;
+  }
+}
+
 .form-hero__input:hover, .form-hero__input:focus, .form-hero__input:focus-within {
   border-color: var(--form-hover);
 }
 
 .form-hero__icons {
   position: absolute;
-  top: 0;
+  top: 22px;
   left: 15px;
   width: 18px;
   height: 18px;
@@ -1537,12 +1581,13 @@ p {
 }
 
 .textarea {
-  width: 448px;
+  width: 100%;
   height: 120px;
   margin-top: 4px;
   resize: none;
   padding: 12px 16px;
   outline-color: var(--form-hover);
+  overflow-x: hidden;
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
@@ -1557,17 +1602,30 @@ p {
   color: rgba(117, 117, 117, 0.5);
 }
 
+@media screen and (min-width: 1200px) {
+  .textarea::placeholder {
+    width: 448px;
+  }
+}
+
 /* ======CHECKBOX====== */
 .checkbox__text {
+  width: 100%;
   margin-top: 20px;
-  width: 430px;
   height: 24px;
   font-family: Roboto;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: #757575;
+}
+
+@media screen and (min-width: 1200px) {
+  .checkbox__text {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .checkbox__text::before {
@@ -1587,8 +1645,8 @@ p {
 .checkbox__link {
   font-family: Roboto;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   text-decoration-line: underline;
   color: var(--form-hover);
