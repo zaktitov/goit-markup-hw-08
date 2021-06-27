@@ -3,6 +3,10 @@ body {
   color: var(--main-text);
   font-family: Roboto, sans-serif;
   padding-top: 80px;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-top: 100px;
+  }
 }
 
 ul {

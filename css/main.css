@@ -5,6 +5,12 @@ body {
   padding-top: 80px;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  body {
+    padding-top: 100px;
+  }
+}
+
 ul {
   list-style: none;
   margin: 0px;
@@ -399,34 +405,22 @@ p {
   .features__list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    margin-top: calc(-1 * 30px);
+    margin-left: calc(-1 * 30px);
   }
-}
-
-@media screen and (min-width: 1200px) {
-  .features__list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-  }
-}
-
-.features__item {
-  margin-bottom: 30px;
 }
 
 @media screen and (min-width: 768px) {
   .features__item {
-    width: calc((100% - 90px) / 2);
-    margin-right: 30px;
+    flex-basis: calc(100% / 2 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .features__item {
-    width: calc((100% - 90px) / 4);
-    margin-right: 30px;
-    margin-bottom: 0px;
+    flex-basis: calc(100% / 4 - 30px);
   }
 }
 
@@ -629,10 +623,14 @@ p {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .staff .staff__list:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
 .staff__item {
-  margin-bottom: 30px;
   width: 100%;
-  left: 215px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
