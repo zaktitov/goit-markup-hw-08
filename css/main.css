@@ -1035,6 +1035,9 @@ p {
 }
 
 .product__link {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
   text-decoration: none;
   background: #ffffff;
   box-sizing: border-box;
