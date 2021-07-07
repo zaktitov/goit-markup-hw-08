@@ -371,15 +371,15 @@ p {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-@media (min-device-pixel-ratio: 1), (min-resolution: 96dpi) and (max-width: 1199px), (min-resolution: 1dppx) and (max-width: 1199px) {
-  .hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../image/tablet/hero-tablet.jpg");
-  }
-}
-
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) and (min-width: 1200px), (min-resolution: 2dppx) and (min-width: 1200px) {
   .hero {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../image/pc/hero-comp@2x.jpg");
+  }
+}
+
+@media (min-device-pixel-ratio: 1), (min-resolution: 96dpi) and (max-width: 1199px), (min-resolution: 1dppx) and (max-width: 1199px) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../image/tablet/hero-tablet.jpg");
   }
 }
 
